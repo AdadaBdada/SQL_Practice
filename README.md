@@ -12,7 +12,7 @@
 7. [EXISTS vs. IN](#exists-vs.-in)
 8. [TRUNCATE vs. DELETE vs. DROP](#truncate-vs.-delete-vs.-drop)
 9. [Dimensional model](#dimensional-model)
-10. [What's Inline Query?](#what's-inline-query)
+10. [What's Inline Query?](#what's-inline-query?)
 11. [What-is-a-View?](#what-is-a-view)
 12. [What are the various forms of Normalization?](#what-are-the-various-forms-of-normalization)
 
