@@ -16,7 +16,7 @@
 11. [What-is-a-View?](#11.-What-is-a-View?)
 12. [What are the various forms of Normalization?](#12.-What-are-the-various-forms-of-Normalization?)
 
-#### 1. Fact Table and Dimension Table
+#### Fact Table and Dimension Table
 ---
 
 #### 2. Normalized vs Denormalized
