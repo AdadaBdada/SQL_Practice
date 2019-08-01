@@ -7,14 +7,14 @@
 2. [Normalized vs Denormalized](#normalized-vs-denormalized)
 3. [Star Schema vs Snowflake Schema](#star-schema-vs-snowflake-schema)
 4. [OLTP vs OLAP](#oltp-vs-olap)
-5. [Left Join vs Right Join， Inner Join vs Outer Join](#left-join-vs-right-join,-inner-join-vs-outer-join)
-6. [What is `Correlated Subquery`?](#what-is-`correlated-subquery`?)
+5. [Left Join vs Right Join, Inner Join vs Outer Join](#left-join-vs-right-join,-inner-join-vs-outer-join)
+6. [What is `Correlated Subquery`?](#what-is-`correlated-subquery`)
 7. [EXISTS vs. IN](#exists-vs.-in)
 8. [TRUNCATE vs. DELETE vs. DROP](#truncate-vs.-delete-vs.-drop)
 9. [Dimensional model](#dimensional-model)
-10. [What's Inline Query?](#what's-inline-query?)
-11. [What-is-a-View?](#what-is-a-view?)
-12. [What are the various forms of Normalization?](#what-are-the-various-forms-of-normalization?)
+10. [What's Inline Query?](#what's-inline-query)
+11. [What-is-a-View?](#what-is-a-view)
+12. [What are the various forms of Normalization?](#what-are-the-various-forms-of-normalization)
 
 #### Fact Table and Dimension Table
 ---
@@ -48,7 +48,7 @@
 > Foreign Key is automatically created when two tables are joined.
 
 
-#### Left Join vs Right join， Inner join vs Outer join
+#### Left Join vs Right join, Inner join vs Outer join
 ---
 
 ![join](join.png)
