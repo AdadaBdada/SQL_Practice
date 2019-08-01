@@ -4,22 +4,22 @@
 #### Table Content:
 
 1. [Fact Table and Dimension Table](#fact-table-and-dimension-table)
-2. [Normalized vs Denormalized](#2.-Normalized-vs-Denormalized)
-3. [Star Schema vs Snowflake Schema](####3.-Star-Schema-vs-Snowflake-Schema)
-4. [OLTP vs OLAP](#4.-OLTP-vs-OLAP)
-5. [Left Join vs Right Join， Inner Join vs Outer Join](#5.-Left-Join-vs-Right-join,-Inner-join-vs-Outer-join)
-6. [What is `Correlated Subquery`?](#6.-What-is-`Correlated-Subquery`?)
-7. [EXISTS vs. IN](#7.-EXISTS-vs.-INv)
-8. [TRUNCATE vs. DELETE vs. DROP](#8.-TRUNCATE-vs.-DELETE-vs.-DROP)
-9. [Dimensional model](#9.-Dimensional-model)
-10. [What's Inline Query?](#10.-What's-Inline-Query?)
-11. [What-is-a-View?](#11.-What-is-a-View?)
-12. [What are the various forms of Normalization?](#12.-What-are-the-various-forms-of-Normalization?)
+2. [Normalized vs Denormalized](#normalized-vs-denormalized)
+3. [Star Schema vs Snowflake Schema](#star-schema-vs-snowflake-schema)
+4. [OLTP vs OLAP](#oltp-vs-olap)
+5. [Left Join vs Right Join， Inner Join vs Outer Join](#left-join-vs-right-join,-inner-join-vs-outer-join)
+6. [What is `Correlated Subquery`?](#what-is-`correlated-subquery`?)
+7. [EXISTS vs. IN](#exists-vs.-in)
+8. [TRUNCATE vs. DELETE vs. DROP](#truncate-vs.-delete-vs.-drop)
+9. [Dimensional model](#dimensional-model)
+10. [What's Inline Query?](#what's-inline-query?)
+11. [What-is-a-View?](#what-is-a-view?)
+12. [What are the various forms of Normalization?](#what-are-the-various-forms-of-normalization?)
 
 #### Fact Table and Dimension Table
 ---
 
-#### 2. Normalized vs Denormalized
+#### Normalized vs Denormalized
 ---
 - `Normalization` is the technique of dividing the data into multiple tables to reduce data redundancy and inconsistency and to achieve data integrity. `Denormalization` is the technique of combining the data into a single table to make data retrieval faster.
 
@@ -29,18 +29,18 @@
 - Normalization increases the number of tables and joins. In contrast, denormalization reduces the number of tables and join.
 - Disk space is wasted in denormalization because same data is stored in different places. On the contrary, disk space is optimized in a normalized table.
 
-#### 3.Star Schema vs Snowflake Schema
+#### Star Schema vs Snowflake Schema
 ---
 
 
-#### 4. OLTP vs OLAP
+#### OLTP vs OLAP
 ---
 
 - `OLTP` stands for **Online Transaction Processing**, is a class of software applications capable of supporting transaction-oriented programs. An important attribute of an `OLTP` system is its ability to maintain concurrency. `OLTP` systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
 
 - `OLAP` stands for **Online Analytical Processing**, a class of software programs which are characterized by the relatively low frequency of online transactions. Queries are often too complex and involve a bunch of aggregations. For `OLAP` systems, the effectiveness measure relies highly on response time. Such systems are widely used for data mining or maintaining aggregated, historical data, usually in **multi-dimensional** schemas.
 
-#### 5. Primary and Foreign Keys
+#### Primary and Foreign Keys
 - `primary keys` - are unique for every row in a table. These are generally the first column in our database.
 > A table in SQL is indexed by default based on its primary key.
 
@@ -48,7 +48,7 @@
 > Foreign Key is automatically created when two tables are joined.
 
 
-####  5. Left Join vs Right join， Inner join vs Outer join
+#### Left Join vs Right join， Inner join vs Outer join
 ---
 
 ![join](join.png)
@@ -61,7 +61,7 @@ An SQL Join statement is used to combine data or rows from two or more tables ba
 
 - `FULL JOIN`: `FULL JOIN` The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
 
-#### 6. What is `Correlated Subquery`?
+#### What is `Correlated Subquery`?
 
 ![subquery](subquery.png){:height="36px" width="36px"}.
 
@@ -95,7 +95,7 @@ ORDER BY
 
 
 
-#### 7. EXISTS vs. IN, if condition returned as NULL
+#### EXISTS vs. IN, if condition returned as NULL
 
 - `EXISTS` is much faster than `IN`, when the sub-query results is very large.
 - `IN` is faster than `EXISTS`, when the sub-query results is very small.
@@ -117,7 +117,7 @@ FROM
 > Note that if the subquery returns NULL, the result of EXISTS is true.
 
 
-#### 8. TRUNCATE vs. DELETE vs. DROP
+#### TRUNCATE vs. DELETE vs. DROP
 - `DELETE` statement is used to delete rows from a table.
 ```
 DELETE FROM Candidates
@@ -140,10 +140,10 @@ DROP TABLE Candidates;
 > The TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
 The DELETE command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
 
-#### 9.Dimensional model
+#### Dimensional model
 
 
-#### 10.What's Inline Query
+#### What's Inline Query
 
 `Inline Query`: A subquery can also be found in the FROM clause. These are called inline views.
 
@@ -153,12 +153,12 @@ An `INLINE` view is subquery with an alias(or correlation name) that you can use
 SELECT * FROM (SELECT id, name FROM users)
 ```
 
-#### 11. What is a View?
+#### What is a View?
 
 A `view` in SQL is a `virtual table` based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
 <img src='https://assets.interviewbit.com/assets/skill_interview_questions/sql/sql-view-9e6072e6b6679959b30f5200db9a1a587060dd0ae95145e442ae07f0e4b664fc.png.gz'>
 
-#### 12. What are the various forms of Normalization?
+#### What are the various forms of Normalization?
 
 
 
