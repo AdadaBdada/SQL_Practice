@@ -5,7 +5,7 @@
 
 1. [Fact Table and Dimension Table](#1.-Fact-Table-and-Dimension-Table)
 2. [Normalized vs Denormalized](#2.-Normalized-vs-Denormalized)
-3. [Star Schema vs Snowflake Schema](#3.-Star-Schema-vs-Snowflake-Schema)
+3. [Star Schema vs Snowflake Schema](####3.-Star-Schema-vs-Snowflake-Schema)
 4. [OLTP vs OLAP](#4.-OLTP-vs-OLAP)
 5. [Left Join vs Right Join， Inner Join vs Outer Join](#5.-Left-Join-vs-Right-join,-Inner-join-vs-Outer-join)
 6. [What is `Correlated Subquery`?](#6.-What-is-`Correlated-Subquery`?)
@@ -57,13 +57,13 @@ An SQL Join statement is used to combine data or rows from two or more tables ba
 
 - `LEFT JOIN`:This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. The rows for which there is no matching row on right side, the result-set will contain null. `LEFT JOIN` is also known as `LEFT OUTER JOIN`
 
-- `RIGHT JOIN`:`RIGHT JOIN` is similar to `LEFT JOIN`. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain null. `RIGHT JOIN` is also known as `RIGHT OUTER JOIN`.
+- `RIGHT JOIN`:`RIGHT JOIN` is similar to `LEFT JOIN`. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain null. `RIGHT JOIN` is also known as `RIGHT OUTER{:height="36px" width="36px"}. JOIN`.
 
 - `FULL JOIN`: `FULL JOIN` The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
 
 #### 6. What is `Correlated Subquery`?
 
-![subquery](subquery.png)
+![subquery](subquery.png){:height="36px" width="36px"}.
 
 ```
 SELECT
