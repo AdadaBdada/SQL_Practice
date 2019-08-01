@@ -3,7 +3,7 @@
 
 #### Table Content:
 
-1. [Fact Table and Dimension Table](#1.-Fact-Table-and-Dimension-Table)
+1. [Fact Table and Dimension Table](#1.-fact-table-and-dimension-table)
 2. [Normalized vs Denormalized](#2.-Normalized-vs-Denormalized)
 3. [Star Schema vs Snowflake Schema](####3.-Star-Schema-vs-Snowflake-Schema)
 4. [OLTP vs OLAP](#4.-OLTP-vs-OLAP)
