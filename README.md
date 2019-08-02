@@ -59,7 +59,9 @@ An SQL Join statement is used to combine data or rows from two or more tables ba
 
 - `RIGHT JOIN`:`RIGHT JOIN` is similar to `LEFT JOIN`. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain null. `RIGHT JOIN` is also known as `RIGHT OUTER{:height="36px" width="36px"}. JOIN`.
 
-- `FULL JOIN`: `FULL JOIN` The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
+- `FULL JOIN`: `FULL JOIN` The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.<br>
+
+[When is a good situation to use a full outer join?](https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join)
 
 #### What is `Correlated Subquery`?
 
